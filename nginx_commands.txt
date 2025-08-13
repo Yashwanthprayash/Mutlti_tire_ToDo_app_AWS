@@ -1,0 +1,15 @@
+# Nginx Installation and Configuration Commands
+
+# Install Nginx
+sudo apt-get install nginx
+
+# View a specific Nginx site configuration file (e.g., for a 'todo_app')
+cat /etc/nginx/sites-available/todo_app.conf
+
+# Reload Nginx to apply configuration changes
+# Note: The command "sudo systemctlnginxad nginx" you provided had a typo.
+# This is the correct command to reload the service.
+sudo systemctl reload nginx
+
+# View the Nginx access logs
+cat /var/log/nginx/access.log
